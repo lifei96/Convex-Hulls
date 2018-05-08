@@ -3,5 +3,5 @@ project(Convex_Hulls)
 
 set(CMAKE_CXX_STANDARD 14)
 
-set(SOURCE_FILES main.cpp Point.cpp Point.h util.cpp util.h)
+set(SOURCE_FILES main.cpp Point.cpp Point.h util.cpp util.h Timer.cpp Timer.h)
 add_executable(Convex_Hulls ${SOURCE_FILES})

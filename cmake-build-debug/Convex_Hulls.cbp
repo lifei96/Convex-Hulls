@@ -88,6 +88,12 @@
 		<Unit filename="/Users/lifei/Documents/Code/Convex-Hulls/Point.h">
 			<Option target="Convex_Hulls"/>
 		</Unit>
+		<Unit filename="/Users/lifei/Documents/Code/Convex-Hulls/Timer.cpp">
+			<Option target="Convex_Hulls"/>
+		</Unit>
+		<Unit filename="/Users/lifei/Documents/Code/Convex-Hulls/Timer.h">
+			<Option target="Convex_Hulls"/>
+		</Unit>
 		<Unit filename="/Users/lifei/Documents/Code/Convex-Hulls/main.cpp">
 			<Option target="Convex_Hulls"/>
 		</Unit>

@@ -1,1 +1,1 @@
-/Library/Developer/CommandLineTools/usr/bin/c++   -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/Convex_Hulls.dir/main.cpp.o CMakeFiles/Convex_Hulls.dir/Point.cpp.o CMakeFiles/Convex_Hulls.dir/util.cpp.o  -o Convex_Hulls 
+/Library/Developer/CommandLineTools/usr/bin/c++   -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/Convex_Hulls.dir/main.cpp.o CMakeFiles/Convex_Hulls.dir/Point.cpp.o CMakeFiles/Convex_Hulls.dir/util.cpp.o CMakeFiles/Convex_Hulls.dir/Timer.cpp.o  -o Convex_Hulls 

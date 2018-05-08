@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Convex_Hulls.dir/main.cpp.o"
   "CMakeFiles/Convex_Hulls.dir/Point.cpp.o"
   "CMakeFiles/Convex_Hulls.dir/util.cpp.o"
+  "CMakeFiles/Convex_Hulls.dir/Timer.cpp.o"
   "Convex_Hulls.pdb"
   "Convex_Hulls"
 )
