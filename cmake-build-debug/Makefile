@@ -123,6 +123,33 @@ Convex_Hulls/fast:
 	$(MAKE) -f CMakeFiles/Convex_Hulls.dir/build.make CMakeFiles/Convex_Hulls.dir/build
 .PHONY : Convex_Hulls/fast
 
+Point.o: Point.cpp.o
+
+.PHONY : Point.o
+
+# target to build an object file
+Point.cpp.o:
+	$(MAKE) -f CMakeFiles/Convex_Hulls.dir/build.make CMakeFiles/Convex_Hulls.dir/Point.cpp.o
+.PHONY : Point.cpp.o
+
+Point.i: Point.cpp.i
+
+.PHONY : Point.i
+
+# target to preprocess a source file
+Point.cpp.i:
+	$(MAKE) -f CMakeFiles/Convex_Hulls.dir/build.make CMakeFiles/Convex_Hulls.dir/Point.cpp.i
+.PHONY : Point.cpp.i
+
+Point.s: Point.cpp.s
+
+.PHONY : Point.s
+
+# target to generate assembly for a file
+Point.cpp.s:
+	$(MAKE) -f CMakeFiles/Convex_Hulls.dir/build.make CMakeFiles/Convex_Hulls.dir/Point.cpp.s
+.PHONY : Point.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Convex_Hulls"
+	@echo "... Point.o"
+	@echo "... Point.i"
+	@echo "... Point.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
