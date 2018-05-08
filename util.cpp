@@ -2,6 +2,8 @@
 // Created by Fei Li on 2018/5/8.
 //
 
+#include <fstream>
+#include <iomanip>
 #include "util.h"
 
 double util::getSqrDist(Point a, Point b) {
@@ -22,4 +24,24 @@ int util::ccw(Point a, Point b, Point c) {
     else if (area < 0)
         return 1;
     return 0;
+}
+
+std::vector<Point> util::readDataset(std::string datasetPath) {
+    std::vector<Point> dataset;
+    std::ifstream infile;
+    infile.open(datasetPath);
+    double x, y;
+    while (infile >> x >> y) {
+        dataset.push_back(Point(x, y));
+    }
+    return dataset;
+}
+
+void util::writeDataset(std::vector<Point> &dataset, std::string datasetPath) {
+    std::ofstream outfile;
+    outfile.open(datasetPath);
+    for (Point p : dataset) {
+        outfile << std::setiosflags(std::ios::fixed) << std::setprecision(6)
+                << p.getX() << ' ' << p.getY() << std::endl;
+    }
 }
