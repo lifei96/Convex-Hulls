@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/lifei/Documents/Code/Convex-Hulls/Point.cpp" "/Users/lifei/Documents/Code/Convex-Hulls/cmake-build-debug/CMakeFiles/Convex_Hulls.dir/Point.cpp.o"
   "/Users/lifei/Documents/Code/Convex-Hulls/main.cpp" "/Users/lifei/Documents/Code/Convex-Hulls/cmake-build-debug/CMakeFiles/Convex_Hulls.dir/main.cpp.o"
+  "/Users/lifei/Documents/Code/Convex-Hulls/util.cpp" "/Users/lifei/Documents/Code/Convex-Hulls/cmake-build-debug/CMakeFiles/Convex_Hulls.dir/util.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

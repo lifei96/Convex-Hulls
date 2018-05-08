@@ -11,7 +11,9 @@ private:
     double x, y;
 public:
     Point(double _x = 0.0, double _y = 0.0);
+
     double getX();
+
     double getY();
 };
 

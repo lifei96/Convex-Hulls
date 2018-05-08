@@ -91,6 +91,12 @@
 		<Unit filename="/Users/lifei/Documents/Code/Convex-Hulls/main.cpp">
 			<Option target="Convex_Hulls"/>
 		</Unit>
+		<Unit filename="/Users/lifei/Documents/Code/Convex-Hulls/util.cpp">
+			<Option target="Convex_Hulls"/>
+		</Unit>
+		<Unit filename="/Users/lifei/Documents/Code/Convex-Hulls/util.h">
+			<Option target="Convex_Hulls"/>
+		</Unit>
 		<Unit filename="/Users/lifei/Documents/Code/Convex-Hulls/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
