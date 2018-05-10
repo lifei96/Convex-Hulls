@@ -82,10 +82,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/lifei/Documents/Code/Convex-Hulls/DatasetGenerator.cpp">
+			<Option target="Convex_Hulls"/>
+		</Unit>
+		<Unit filename="/Users/lifei/Documents/Code/Convex-Hulls/DatasetGenerator.h">
+			<Option target="Convex_Hulls"/>
+		</Unit>
 		<Unit filename="/Users/lifei/Documents/Code/Convex-Hulls/Point.cpp">
 			<Option target="Convex_Hulls"/>
 		</Unit>
 		<Unit filename="/Users/lifei/Documents/Code/Convex-Hulls/Point.h">
+			<Option target="Convex_Hulls"/>
+		</Unit>
+		<Unit filename="/Users/lifei/Documents/Code/Convex-Hulls/Randomizer.cpp">
+			<Option target="Convex_Hulls"/>
+		</Unit>
+		<Unit filename="/Users/lifei/Documents/Code/Convex-Hulls/Randomizer.h">
 			<Option target="Convex_Hulls"/>
 		</Unit>
 		<Unit filename="/Users/lifei/Documents/Code/Convex-Hulls/Timer.cpp">

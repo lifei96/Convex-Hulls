@@ -123,6 +123,33 @@ Convex_Hulls/fast:
 	$(MAKE) -f CMakeFiles/Convex_Hulls.dir/build.make CMakeFiles/Convex_Hulls.dir/build
 .PHONY : Convex_Hulls/fast
 
+DatasetGenerator.o: DatasetGenerator.cpp.o
+
+.PHONY : DatasetGenerator.o
+
+# target to build an object file
+DatasetGenerator.cpp.o:
+	$(MAKE) -f CMakeFiles/Convex_Hulls.dir/build.make CMakeFiles/Convex_Hulls.dir/DatasetGenerator.cpp.o
+.PHONY : DatasetGenerator.cpp.o
+
+DatasetGenerator.i: DatasetGenerator.cpp.i
+
+.PHONY : DatasetGenerator.i
+
+# target to preprocess a source file
+DatasetGenerator.cpp.i:
+	$(MAKE) -f CMakeFiles/Convex_Hulls.dir/build.make CMakeFiles/Convex_Hulls.dir/DatasetGenerator.cpp.i
+.PHONY : DatasetGenerator.cpp.i
+
+DatasetGenerator.s: DatasetGenerator.cpp.s
+
+.PHONY : DatasetGenerator.s
+
+# target to generate assembly for a file
+DatasetGenerator.cpp.s:
+	$(MAKE) -f CMakeFiles/Convex_Hulls.dir/build.make CMakeFiles/Convex_Hulls.dir/DatasetGenerator.cpp.s
+.PHONY : DatasetGenerator.cpp.s
+
 Point.o: Point.cpp.o
 
 .PHONY : Point.o
@@ -149,6 +176,33 @@ Point.s: Point.cpp.s
 Point.cpp.s:
 	$(MAKE) -f CMakeFiles/Convex_Hulls.dir/build.make CMakeFiles/Convex_Hulls.dir/Point.cpp.s
 .PHONY : Point.cpp.s
+
+Randomizer.o: Randomizer.cpp.o
+
+.PHONY : Randomizer.o
+
+# target to build an object file
+Randomizer.cpp.o:
+	$(MAKE) -f CMakeFiles/Convex_Hulls.dir/build.make CMakeFiles/Convex_Hulls.dir/Randomizer.cpp.o
+.PHONY : Randomizer.cpp.o
+
+Randomizer.i: Randomizer.cpp.i
+
+.PHONY : Randomizer.i
+
+# target to preprocess a source file
+Randomizer.cpp.i:
+	$(MAKE) -f CMakeFiles/Convex_Hulls.dir/build.make CMakeFiles/Convex_Hulls.dir/Randomizer.cpp.i
+.PHONY : Randomizer.cpp.i
+
+Randomizer.s: Randomizer.cpp.s
+
+.PHONY : Randomizer.s
+
+# target to generate assembly for a file
+Randomizer.cpp.s:
+	$(MAKE) -f CMakeFiles/Convex_Hulls.dir/build.make CMakeFiles/Convex_Hulls.dir/Randomizer.cpp.s
+.PHONY : Randomizer.cpp.s
 
 Timer.o: Timer.cpp.o
 
@@ -240,9 +294,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Convex_Hulls"
+	@echo "... DatasetGenerator.o"
+	@echo "... DatasetGenerator.i"
+	@echo "... DatasetGenerator.s"
 	@echo "... Point.o"
 	@echo "... Point.i"
 	@echo "... Point.s"
+	@echo "... Randomizer.o"
+	@echo "... Randomizer.i"
+	@echo "... Randomizer.s"
 	@echo "... Timer.o"
 	@echo "... Timer.i"
 	@echo "... Timer.s"

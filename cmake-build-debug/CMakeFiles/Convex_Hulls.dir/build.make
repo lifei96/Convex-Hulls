@@ -153,12 +153,62 @@ CMakeFiles/Convex_Hulls.dir/Timer.cpp.o.provides: CMakeFiles/Convex_Hulls.dir/Ti
 CMakeFiles/Convex_Hulls.dir/Timer.cpp.o.provides.build: CMakeFiles/Convex_Hulls.dir/Timer.cpp.o
 
 
+CMakeFiles/Convex_Hulls.dir/DatasetGenerator.cpp.o: CMakeFiles/Convex_Hulls.dir/flags.make
+CMakeFiles/Convex_Hulls.dir/DatasetGenerator.cpp.o: ../DatasetGenerator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lifei/Documents/Code/Convex-Hulls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Convex_Hulls.dir/DatasetGenerator.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Convex_Hulls.dir/DatasetGenerator.cpp.o -c /Users/lifei/Documents/Code/Convex-Hulls/DatasetGenerator.cpp
+
+CMakeFiles/Convex_Hulls.dir/DatasetGenerator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Convex_Hulls.dir/DatasetGenerator.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lifei/Documents/Code/Convex-Hulls/DatasetGenerator.cpp > CMakeFiles/Convex_Hulls.dir/DatasetGenerator.cpp.i
+
+CMakeFiles/Convex_Hulls.dir/DatasetGenerator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Convex_Hulls.dir/DatasetGenerator.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lifei/Documents/Code/Convex-Hulls/DatasetGenerator.cpp -o CMakeFiles/Convex_Hulls.dir/DatasetGenerator.cpp.s
+
+CMakeFiles/Convex_Hulls.dir/DatasetGenerator.cpp.o.requires:
+
+.PHONY : CMakeFiles/Convex_Hulls.dir/DatasetGenerator.cpp.o.requires
+
+CMakeFiles/Convex_Hulls.dir/DatasetGenerator.cpp.o.provides: CMakeFiles/Convex_Hulls.dir/DatasetGenerator.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Convex_Hulls.dir/build.make CMakeFiles/Convex_Hulls.dir/DatasetGenerator.cpp.o.provides.build
+.PHONY : CMakeFiles/Convex_Hulls.dir/DatasetGenerator.cpp.o.provides
+
+CMakeFiles/Convex_Hulls.dir/DatasetGenerator.cpp.o.provides.build: CMakeFiles/Convex_Hulls.dir/DatasetGenerator.cpp.o
+
+
+CMakeFiles/Convex_Hulls.dir/Randomizer.cpp.o: CMakeFiles/Convex_Hulls.dir/flags.make
+CMakeFiles/Convex_Hulls.dir/Randomizer.cpp.o: ../Randomizer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lifei/Documents/Code/Convex-Hulls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Convex_Hulls.dir/Randomizer.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Convex_Hulls.dir/Randomizer.cpp.o -c /Users/lifei/Documents/Code/Convex-Hulls/Randomizer.cpp
+
+CMakeFiles/Convex_Hulls.dir/Randomizer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Convex_Hulls.dir/Randomizer.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lifei/Documents/Code/Convex-Hulls/Randomizer.cpp > CMakeFiles/Convex_Hulls.dir/Randomizer.cpp.i
+
+CMakeFiles/Convex_Hulls.dir/Randomizer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Convex_Hulls.dir/Randomizer.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lifei/Documents/Code/Convex-Hulls/Randomizer.cpp -o CMakeFiles/Convex_Hulls.dir/Randomizer.cpp.s
+
+CMakeFiles/Convex_Hulls.dir/Randomizer.cpp.o.requires:
+
+.PHONY : CMakeFiles/Convex_Hulls.dir/Randomizer.cpp.o.requires
+
+CMakeFiles/Convex_Hulls.dir/Randomizer.cpp.o.provides: CMakeFiles/Convex_Hulls.dir/Randomizer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Convex_Hulls.dir/build.make CMakeFiles/Convex_Hulls.dir/Randomizer.cpp.o.provides.build
+.PHONY : CMakeFiles/Convex_Hulls.dir/Randomizer.cpp.o.provides
+
+CMakeFiles/Convex_Hulls.dir/Randomizer.cpp.o.provides.build: CMakeFiles/Convex_Hulls.dir/Randomizer.cpp.o
+
+
 # Object files for target Convex_Hulls
 Convex_Hulls_OBJECTS = \
 "CMakeFiles/Convex_Hulls.dir/main.cpp.o" \
 "CMakeFiles/Convex_Hulls.dir/Point.cpp.o" \
 "CMakeFiles/Convex_Hulls.dir/util.cpp.o" \
-"CMakeFiles/Convex_Hulls.dir/Timer.cpp.o"
+"CMakeFiles/Convex_Hulls.dir/Timer.cpp.o" \
+"CMakeFiles/Convex_Hulls.dir/DatasetGenerator.cpp.o" \
+"CMakeFiles/Convex_Hulls.dir/Randomizer.cpp.o"
 
 # External object files for target Convex_Hulls
 Convex_Hulls_EXTERNAL_OBJECTS =
@@ -167,9 +217,11 @@ Convex_Hulls: CMakeFiles/Convex_Hulls.dir/main.cpp.o
 Convex_Hulls: CMakeFiles/Convex_Hulls.dir/Point.cpp.o
 Convex_Hulls: CMakeFiles/Convex_Hulls.dir/util.cpp.o
 Convex_Hulls: CMakeFiles/Convex_Hulls.dir/Timer.cpp.o
+Convex_Hulls: CMakeFiles/Convex_Hulls.dir/DatasetGenerator.cpp.o
+Convex_Hulls: CMakeFiles/Convex_Hulls.dir/Randomizer.cpp.o
 Convex_Hulls: CMakeFiles/Convex_Hulls.dir/build.make
 Convex_Hulls: CMakeFiles/Convex_Hulls.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/lifei/Documents/Code/Convex-Hulls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Convex_Hulls"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/lifei/Documents/Code/Convex-Hulls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Convex_Hulls"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Convex_Hulls.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -181,6 +233,8 @@ CMakeFiles/Convex_Hulls.dir/requires: CMakeFiles/Convex_Hulls.dir/main.cpp.o.req
 CMakeFiles/Convex_Hulls.dir/requires: CMakeFiles/Convex_Hulls.dir/Point.cpp.o.requires
 CMakeFiles/Convex_Hulls.dir/requires: CMakeFiles/Convex_Hulls.dir/util.cpp.o.requires
 CMakeFiles/Convex_Hulls.dir/requires: CMakeFiles/Convex_Hulls.dir/Timer.cpp.o.requires
+CMakeFiles/Convex_Hulls.dir/requires: CMakeFiles/Convex_Hulls.dir/DatasetGenerator.cpp.o.requires
+CMakeFiles/Convex_Hulls.dir/requires: CMakeFiles/Convex_Hulls.dir/Randomizer.cpp.o.requires
 
 .PHONY : CMakeFiles/Convex_Hulls.dir/requires
 

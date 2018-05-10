@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Convex_Hulls.dir/Point.cpp.o"
   "CMakeFiles/Convex_Hulls.dir/util.cpp.o"
   "CMakeFiles/Convex_Hulls.dir/Timer.cpp.o"
+  "CMakeFiles/Convex_Hulls.dir/DatasetGenerator.cpp.o"
+  "CMakeFiles/Convex_Hulls.dir/Randomizer.cpp.o"
   "Convex_Hulls.pdb"
   "Convex_Hulls"
 )
