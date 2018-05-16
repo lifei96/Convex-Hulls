@@ -9,12 +9,7 @@
 #include <random>
 
 class Randomizer {
-private:
-    std::random_device rd;
-    std::mt19937 gen;
 public:
-    Randomizer();
-
     double generate(double floor, double ceil);
 };
 

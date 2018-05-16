@@ -60,39 +60,39 @@ CMAKE_SOURCE_DIR = /Users/lifei/Documents/Code/Convex-Hulls
 CMAKE_BINARY_DIR = /Users/lifei/Documents/Code/Convex-Hulls/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/Convex_Hulls.dir
+# Target rules for target CMakeFiles/create_dataset.dir
 
 # All Build rule for target.
-CMakeFiles/Convex_Hulls.dir/all:
-	$(MAKE) -f CMakeFiles/Convex_Hulls.dir/build.make CMakeFiles/Convex_Hulls.dir/depend
-	$(MAKE) -f CMakeFiles/Convex_Hulls.dir/build.make CMakeFiles/Convex_Hulls.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/lifei/Documents/Code/Convex-Hulls/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target Convex_Hulls"
-.PHONY : CMakeFiles/Convex_Hulls.dir/all
+CMakeFiles/create_dataset.dir/all:
+	$(MAKE) -f CMakeFiles/create_dataset.dir/build.make CMakeFiles/create_dataset.dir/depend
+	$(MAKE) -f CMakeFiles/create_dataset.dir/build.make CMakeFiles/create_dataset.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/lifei/Documents/Code/Convex-Hulls/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target create_dataset"
+.PHONY : CMakeFiles/create_dataset.dir/all
 
 # Include target in all.
-all: CMakeFiles/Convex_Hulls.dir/all
+all: CMakeFiles/create_dataset.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Convex_Hulls.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lifei/Documents/Code/Convex-Hulls/cmake-build-debug/CMakeFiles 7
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Convex_Hulls.dir/all
+CMakeFiles/create_dataset.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lifei/Documents/Code/Convex-Hulls/cmake-build-debug/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/create_dataset.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lifei/Documents/Code/Convex-Hulls/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/Convex_Hulls.dir/rule
+.PHONY : CMakeFiles/create_dataset.dir/rule
 
 # Convenience name for target.
-Convex_Hulls: CMakeFiles/Convex_Hulls.dir/rule
+create_dataset: CMakeFiles/create_dataset.dir/rule
 
-.PHONY : Convex_Hulls
-
-# clean rule for target.
-CMakeFiles/Convex_Hulls.dir/clean:
-	$(MAKE) -f CMakeFiles/Convex_Hulls.dir/build.make CMakeFiles/Convex_Hulls.dir/clean
-.PHONY : CMakeFiles/Convex_Hulls.dir/clean
+.PHONY : create_dataset
 
 # clean rule for target.
-clean: CMakeFiles/Convex_Hulls.dir/clean
+CMakeFiles/create_dataset.dir/clean:
+	$(MAKE) -f CMakeFiles/create_dataset.dir/build.make CMakeFiles/create_dataset.dir/clean
+.PHONY : CMakeFiles/create_dataset.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/create_dataset.dir/clean
 
 .PHONY : clean
 

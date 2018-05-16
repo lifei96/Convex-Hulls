@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Convex_Hulls
+# Target rules for targets named create_dataset
 
 # Build rule for target.
-Convex_Hulls: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Convex_Hulls
-.PHONY : Convex_Hulls
+create_dataset: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 create_dataset
+.PHONY : create_dataset
 
 # fast build rule for target.
-Convex_Hulls/fast:
-	$(MAKE) -f CMakeFiles/Convex_Hulls.dir/build.make CMakeFiles/Convex_Hulls.dir/build
-.PHONY : Convex_Hulls/fast
+create_dataset/fast:
+	$(MAKE) -f CMakeFiles/create_dataset.dir/build.make CMakeFiles/create_dataset.dir/build
+.PHONY : create_dataset/fast
 
 DatasetGenerator.o: DatasetGenerator.cpp.o
 
@@ -129,7 +129,7 @@ DatasetGenerator.o: DatasetGenerator.cpp.o
 
 # target to build an object file
 DatasetGenerator.cpp.o:
-	$(MAKE) -f CMakeFiles/Convex_Hulls.dir/build.make CMakeFiles/Convex_Hulls.dir/DatasetGenerator.cpp.o
+	$(MAKE) -f CMakeFiles/create_dataset.dir/build.make CMakeFiles/create_dataset.dir/DatasetGenerator.cpp.o
 .PHONY : DatasetGenerator.cpp.o
 
 DatasetGenerator.i: DatasetGenerator.cpp.i
@@ -138,7 +138,7 @@ DatasetGenerator.i: DatasetGenerator.cpp.i
 
 # target to preprocess a source file
 DatasetGenerator.cpp.i:
-	$(MAKE) -f CMakeFiles/Convex_Hulls.dir/build.make CMakeFiles/Convex_Hulls.dir/DatasetGenerator.cpp.i
+	$(MAKE) -f CMakeFiles/create_dataset.dir/build.make CMakeFiles/create_dataset.dir/DatasetGenerator.cpp.i
 .PHONY : DatasetGenerator.cpp.i
 
 DatasetGenerator.s: DatasetGenerator.cpp.s
@@ -147,7 +147,7 @@ DatasetGenerator.s: DatasetGenerator.cpp.s
 
 # target to generate assembly for a file
 DatasetGenerator.cpp.s:
-	$(MAKE) -f CMakeFiles/Convex_Hulls.dir/build.make CMakeFiles/Convex_Hulls.dir/DatasetGenerator.cpp.s
+	$(MAKE) -f CMakeFiles/create_dataset.dir/build.make CMakeFiles/create_dataset.dir/DatasetGenerator.cpp.s
 .PHONY : DatasetGenerator.cpp.s
 
 Point.o: Point.cpp.o
@@ -156,7 +156,7 @@ Point.o: Point.cpp.o
 
 # target to build an object file
 Point.cpp.o:
-	$(MAKE) -f CMakeFiles/Convex_Hulls.dir/build.make CMakeFiles/Convex_Hulls.dir/Point.cpp.o
+	$(MAKE) -f CMakeFiles/create_dataset.dir/build.make CMakeFiles/create_dataset.dir/Point.cpp.o
 .PHONY : Point.cpp.o
 
 Point.i: Point.cpp.i
@@ -165,7 +165,7 @@ Point.i: Point.cpp.i
 
 # target to preprocess a source file
 Point.cpp.i:
-	$(MAKE) -f CMakeFiles/Convex_Hulls.dir/build.make CMakeFiles/Convex_Hulls.dir/Point.cpp.i
+	$(MAKE) -f CMakeFiles/create_dataset.dir/build.make CMakeFiles/create_dataset.dir/Point.cpp.i
 .PHONY : Point.cpp.i
 
 Point.s: Point.cpp.s
@@ -174,7 +174,7 @@ Point.s: Point.cpp.s
 
 # target to generate assembly for a file
 Point.cpp.s:
-	$(MAKE) -f CMakeFiles/Convex_Hulls.dir/build.make CMakeFiles/Convex_Hulls.dir/Point.cpp.s
+	$(MAKE) -f CMakeFiles/create_dataset.dir/build.make CMakeFiles/create_dataset.dir/Point.cpp.s
 .PHONY : Point.cpp.s
 
 Randomizer.o: Randomizer.cpp.o
@@ -183,7 +183,7 @@ Randomizer.o: Randomizer.cpp.o
 
 # target to build an object file
 Randomizer.cpp.o:
-	$(MAKE) -f CMakeFiles/Convex_Hulls.dir/build.make CMakeFiles/Convex_Hulls.dir/Randomizer.cpp.o
+	$(MAKE) -f CMakeFiles/create_dataset.dir/build.make CMakeFiles/create_dataset.dir/Randomizer.cpp.o
 .PHONY : Randomizer.cpp.o
 
 Randomizer.i: Randomizer.cpp.i
@@ -192,7 +192,7 @@ Randomizer.i: Randomizer.cpp.i
 
 # target to preprocess a source file
 Randomizer.cpp.i:
-	$(MAKE) -f CMakeFiles/Convex_Hulls.dir/build.make CMakeFiles/Convex_Hulls.dir/Randomizer.cpp.i
+	$(MAKE) -f CMakeFiles/create_dataset.dir/build.make CMakeFiles/create_dataset.dir/Randomizer.cpp.i
 .PHONY : Randomizer.cpp.i
 
 Randomizer.s: Randomizer.cpp.s
@@ -201,62 +201,35 @@ Randomizer.s: Randomizer.cpp.s
 
 # target to generate assembly for a file
 Randomizer.cpp.s:
-	$(MAKE) -f CMakeFiles/Convex_Hulls.dir/build.make CMakeFiles/Convex_Hulls.dir/Randomizer.cpp.s
+	$(MAKE) -f CMakeFiles/create_dataset.dir/build.make CMakeFiles/create_dataset.dir/Randomizer.cpp.s
 .PHONY : Randomizer.cpp.s
 
-Timer.o: Timer.cpp.o
+create_dataset.o: create_dataset.cpp.o
 
-.PHONY : Timer.o
-
-# target to build an object file
-Timer.cpp.o:
-	$(MAKE) -f CMakeFiles/Convex_Hulls.dir/build.make CMakeFiles/Convex_Hulls.dir/Timer.cpp.o
-.PHONY : Timer.cpp.o
-
-Timer.i: Timer.cpp.i
-
-.PHONY : Timer.i
-
-# target to preprocess a source file
-Timer.cpp.i:
-	$(MAKE) -f CMakeFiles/Convex_Hulls.dir/build.make CMakeFiles/Convex_Hulls.dir/Timer.cpp.i
-.PHONY : Timer.cpp.i
-
-Timer.s: Timer.cpp.s
-
-.PHONY : Timer.s
-
-# target to generate assembly for a file
-Timer.cpp.s:
-	$(MAKE) -f CMakeFiles/Convex_Hulls.dir/build.make CMakeFiles/Convex_Hulls.dir/Timer.cpp.s
-.PHONY : Timer.cpp.s
-
-main.o: main.cpp.o
-
-.PHONY : main.o
+.PHONY : create_dataset.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/Convex_Hulls.dir/build.make CMakeFiles/Convex_Hulls.dir/main.cpp.o
-.PHONY : main.cpp.o
+create_dataset.cpp.o:
+	$(MAKE) -f CMakeFiles/create_dataset.dir/build.make CMakeFiles/create_dataset.dir/create_dataset.cpp.o
+.PHONY : create_dataset.cpp.o
 
-main.i: main.cpp.i
+create_dataset.i: create_dataset.cpp.i
 
-.PHONY : main.i
+.PHONY : create_dataset.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/Convex_Hulls.dir/build.make CMakeFiles/Convex_Hulls.dir/main.cpp.i
-.PHONY : main.cpp.i
+create_dataset.cpp.i:
+	$(MAKE) -f CMakeFiles/create_dataset.dir/build.make CMakeFiles/create_dataset.dir/create_dataset.cpp.i
+.PHONY : create_dataset.cpp.i
 
-main.s: main.cpp.s
+create_dataset.s: create_dataset.cpp.s
 
-.PHONY : main.s
+.PHONY : create_dataset.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/Convex_Hulls.dir/build.make CMakeFiles/Convex_Hulls.dir/main.cpp.s
-.PHONY : main.cpp.s
+create_dataset.cpp.s:
+	$(MAKE) -f CMakeFiles/create_dataset.dir/build.make CMakeFiles/create_dataset.dir/create_dataset.cpp.s
+.PHONY : create_dataset.cpp.s
 
 util.o: util.cpp.o
 
@@ -264,7 +237,7 @@ util.o: util.cpp.o
 
 # target to build an object file
 util.cpp.o:
-	$(MAKE) -f CMakeFiles/Convex_Hulls.dir/build.make CMakeFiles/Convex_Hulls.dir/util.cpp.o
+	$(MAKE) -f CMakeFiles/create_dataset.dir/build.make CMakeFiles/create_dataset.dir/util.cpp.o
 .PHONY : util.cpp.o
 
 util.i: util.cpp.i
@@ -273,7 +246,7 @@ util.i: util.cpp.i
 
 # target to preprocess a source file
 util.cpp.i:
-	$(MAKE) -f CMakeFiles/Convex_Hulls.dir/build.make CMakeFiles/Convex_Hulls.dir/util.cpp.i
+	$(MAKE) -f CMakeFiles/create_dataset.dir/build.make CMakeFiles/create_dataset.dir/util.cpp.i
 .PHONY : util.cpp.i
 
 util.s: util.cpp.s
@@ -282,7 +255,7 @@ util.s: util.cpp.s
 
 # target to generate assembly for a file
 util.cpp.s:
-	$(MAKE) -f CMakeFiles/Convex_Hulls.dir/build.make CMakeFiles/Convex_Hulls.dir/util.cpp.s
+	$(MAKE) -f CMakeFiles/create_dataset.dir/build.make CMakeFiles/create_dataset.dir/util.cpp.s
 .PHONY : util.cpp.s
 
 # Help Target
@@ -293,7 +266,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Convex_Hulls"
+	@echo "... create_dataset"
 	@echo "... DatasetGenerator.o"
 	@echo "... DatasetGenerator.i"
 	@echo "... DatasetGenerator.s"
@@ -303,12 +276,9 @@ help:
 	@echo "... Randomizer.o"
 	@echo "... Randomizer.i"
 	@echo "... Randomizer.s"
-	@echo "... Timer.o"
-	@echo "... Timer.i"
-	@echo "... Timer.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... create_dataset.o"
+	@echo "... create_dataset.i"
+	@echo "... create_dataset.s"
 	@echo "... util.o"
 	@echo "... util.i"
 	@echo "... util.s"

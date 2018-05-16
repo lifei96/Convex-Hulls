@@ -34,6 +34,7 @@ std::vector<Point> util::readDataset(std::string datasetPath) {
     while (infile >> x >> y) {
         dataset.push_back(Point(x, y));
     }
+    infile.close();
     return dataset;
 }
 
@@ -44,4 +45,5 @@ void util::writeDataset(std::vector<Point> &dataset, std::string datasetPath) {
         outfile << std::setiosflags(std::ios::fixed) << std::setprecision(6)
                 << p.getX() << ' ' << p.getY() << std::endl;
     }
+    outfile.close();
 }

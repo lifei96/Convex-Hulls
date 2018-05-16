@@ -3,5 +3,5 @@ project(Convex_Hulls)
 
 set(CMAKE_CXX_STANDARD 14)
 
-set(SOURCE_FILES main.cpp Point.cpp Point.h util.cpp util.h Timer.cpp Timer.h DatasetGenerator.cpp DatasetGenerator.h Randomizer.cpp Randomizer.h)
-add_executable(Convex_Hulls ${SOURCE_FILES})
+set(CREATE_DATASET_SOURCE_FILES create_dataset.cpp Point.cpp Point.h util.cpp util.h DatasetGenerator.cpp DatasetGenerator.h Randomizer.cpp Randomizer.h)
+add_executable(create_dataset ${CREATE_DATASET_SOURCE_FILES})
