@@ -5,3 +5,6 @@ set(CMAKE_CXX_STANDARD 14)
 
 set(CREATE_DATASET_SOURCE_FILES create_dataset.cpp Point.cpp Point.h util.cpp util.h DatasetGenerator.cpp DatasetGenerator.h Randomizer.cpp Randomizer.h)
 add_executable(create_dataset ${CREATE_DATASET_SOURCE_FILES})
+
+set(EVAL_GRAHAM_SOURCE_FILES evalGrahamScan.cpp GrahamScan.cpp GrahamScan.h Point.cpp Point.h Timer.cpp Timer.h util.cpp util.h)
+add_executable(eval_graham_scan ${EVAL_GRAHAM_SOURCE_FILES})

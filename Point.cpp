@@ -9,10 +9,10 @@ Point::Point(double _x, double _y) {
     y = _y;
 }
 
-double Point::getX() {
+double Point::getX() const {
     return x;
 }
 
-double Point::getY() {
+double Point::getY() const {
     return y;
 }

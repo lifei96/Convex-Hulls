@@ -12,9 +12,9 @@ private:
 public:
     Point(double _x = 0.0, double _y = 0.0);
 
-    double getX();
+    double getX() const;
 
-    double getY();
+    double getY() const;
 };
 
 
