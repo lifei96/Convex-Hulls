@@ -23,7 +23,8 @@ std::vector<Point> DatasetGenerator::generateCircle(double radius, int num) {
     for (int i = 0; i < num; i++) {
         double r = randomizer.generate(0.0, radius);
         double theta = randomizer.generate(0.0, 2.0 * M_PI);
-        dataset.push_back(Point(r * cos(theta), r * sin(theta)));
+        dataset.push_back(
+                Point(r * cos(theta) + radius, r * sin(theta) + radius));
     }
     return dataset;
 }

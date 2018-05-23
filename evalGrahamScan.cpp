@@ -11,7 +11,8 @@ int main() {
     GrahamScan grahamScan;
     int num = 3200000;
     Timer timer;
-    std::vector<Point> dataset = util::readDataset("dataset/circle_" + std::to_string(num) + ".txt");
+    std::vector<Point> dataset = util::readDataset(
+            "dataset/circle_" + std::to_string(num) + ".txt");
     timer.start();
     grahamScan.grahamScan(dataset);
     timer.stop();
