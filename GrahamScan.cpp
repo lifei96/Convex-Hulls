@@ -3,24 +3,12 @@
 //
 
 #include "GrahamScan.h"
-#include "util.h"
-
-bool GrahamScan::yOrder(const Point &a, const Point &b) {
-    return a.getY() < b.getY() || (a.getY() == b.getY() && a.getX() < b.getX());
-}
-
-bool GrahamScan::polarOrder(const Point &a, const Point &b) {
-    int order = util::ccw(Point(0.0, 0.0), a, b);
-    if (order == 0)
-        return util::getSqrDist(Point(0.0, 0.0), a) <
-               util::getSqrDist(Point(0.0, 0.0), b);
-    return (order == -1);
-}
 
 std::stack<Point> GrahamScan::grahamScan(std::vector<Point> &dataset) {
     std::stack<Point> S;
-    std::sort(dataset.begin(), dataset.end(), yOrder);
-    sort(dataset.begin() + 1, dataset.end(), polarOrder);
+    std::sort(dataset.begin(), dataset.end(), GrahamScan::yOrder());
+    sort(dataset.begin() + 1, dataset.end(),
+         GrahamScan::polarOrder(dataset[0]));
     S.push(dataset[0]);
     S.push(dataset[1]);
     S.push(dataset[2]);

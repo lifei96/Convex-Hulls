@@ -9,7 +9,7 @@
 
 int main() {
     GrahamScan grahamScan;
-    int num = 3200000;
+    int num = 100000;
     Timer timer;
     std::vector<Point> dataset = util::readDataset(
             "dataset/circle_" + std::to_string(num) + ".txt");
