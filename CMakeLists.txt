@@ -14,3 +14,6 @@ add_executable(eval_ahall ${EVAL_AHALL_SOURCE_FILES})
 
 set(EVAL_JARVIS_SOURCE_FILES evalJarvis.cpp Jarvis.cpp Jarvis.h Point.cpp Point.h Timer.cpp Timer.h util.cpp util.h)
 add_executable(eval_jarvis ${EVAL_JARVIS_SOURCE_FILES})
+
+set(EVAL_MONOTONE_CHAIN_SOURCE_FILES evalMonotoneChain.cpp MonotoneChain.cpp MonotoneChain.h Point.cpp Point.h Timer.cpp Timer.h util.cpp util.h)
+add_executable(eval_monotone_chain ${EVAL_MONOTONE_CHAIN_SOURCE_FILES})

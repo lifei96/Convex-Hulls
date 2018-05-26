@@ -14,8 +14,10 @@ private:
     class xOrder {
     public:
         xOrder() {}
+
         bool operator()(const Point &a, const Point &b) {
-            return a.getX() < b.getX() || (a.getX() == b.getY() && a.getY() < b.getY());
+            return a.getX() < b.getX() ||
+                   (a.getX() == b.getX() && a.getY() < b.getY());
         }
     };
 
@@ -29,15 +31,22 @@ private:
     int l, r, u, d;
 
     void getPoles();
+
     void getld();
+
     void getrd();
+
     void getlu();
+
     void getru();
+
     void getACH();
+
     void getCH();
 
 public:
     AHall(std::vector<Point> &dataset);
+
     std::vector<Point> aHall();
 };
 

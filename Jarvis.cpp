@@ -17,7 +17,9 @@ std::vector<Point> Jarvis::jarvis(std::vector<Point> &dataset) {
         pos.push_back(pointOnHull);
         int endpoint = 0;
         for (int i = 1; i < dataset.size(); i++) {
-            if (endpoint == pointOnHull || util::ccw(dataset[pointOnHull], dataset[i], dataset[endpoint]) == 1) {
+            if (endpoint == pointOnHull ||
+                util::ccw(dataset[pointOnHull], dataset[i],
+                          dataset[endpoint]) == 1) {
                 endpoint = i;
             }
         }

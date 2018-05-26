@@ -5,19 +5,23 @@
 #ifndef CONVEX_HULLS_MONOTONECHAIN_H
 #define CONVEX_HULLS_MONOTONECHAIN_H
 
+#include "Point.h"
+#include "vector"
 
 class MonotoneChain {
 private:
     class xOrder {
     public:
         xOrder() {}
+
         bool operator()(const Point &a, const Point &b) {
-            return a.getX() < b.getX() || (a.getX() == b.getY() && a.getY() < b.getY());
+            return a.getX() < b.getX() ||
+                   (a.getX() == b.getX() && a.getY() < b.getY());
         }
     };
 
 public:
-
+    std::vector<Point> monotoneChain(std::vector<Point> &dataset);
 };
 
 
