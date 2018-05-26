@@ -23,7 +23,7 @@ private:
     private:
         Point O;
     public:
-        polarOrder(Point O) : O(O) {}
+        polarOrder(Point O): O(O) {}
         bool operator()(const Point &a, const Point &b) {
             int order = util::ccw(O, a, b);
             if (order == 0)

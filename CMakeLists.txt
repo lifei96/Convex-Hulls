@@ -8,3 +8,6 @@ add_executable(create_dataset ${CREATE_DATASET_SOURCE_FILES})
 
 set(EVAL_GRAHAM_SOURCE_FILES evalGrahamScan.cpp GrahamScan.cpp GrahamScan.h Point.cpp Point.h Timer.cpp Timer.h util.cpp util.h)
 add_executable(eval_graham_scan ${EVAL_GRAHAM_SOURCE_FILES})
+
+set(EVAL_AHALL_SOURCE_FILES evalAHall.cpp AHall.cpp AHall.h Point.cpp Point.h Timer.cpp Timer.h util.cpp util.h)
+add_executable(eval_ahall ${EVAL_AHALL_SOURCE_FILES})
