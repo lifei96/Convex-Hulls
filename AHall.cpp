@@ -4,7 +4,7 @@
 
 #include "AHall.h"
 
-AHall::AHall(std::vector<Point> &dataset): dataset(dataset) {}
+AHall::AHall(std::vector<Point> &dataset) : dataset(dataset) {}
 
 std::vector<Point> AHall::aHall() {
     sort(dataset.begin(), dataset.end(), AHall::xOrder());
