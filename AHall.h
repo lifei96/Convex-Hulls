@@ -35,6 +35,7 @@ private:
     void getru();
     void getACH();
     void getCH();
+
 public:
     AHall(std::vector<Point> &dataset);
     std::vector<Point> aHall();

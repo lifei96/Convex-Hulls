@@ -11,3 +11,6 @@ add_executable(eval_graham_scan ${EVAL_GRAHAM_SOURCE_FILES})
 
 set(EVAL_AHALL_SOURCE_FILES evalAHall.cpp AHall.cpp AHall.h Point.cpp Point.h Timer.cpp Timer.h util.cpp util.h)
 add_executable(eval_ahall ${EVAL_AHALL_SOURCE_FILES})
+
+set(EVAL_JARVIS_SOURCE_FILES evalJarvis.cpp Jarvis.cpp Jarvis.h Point.cpp Point.h Timer.cpp Timer.h util.cpp util.h)
+add_executable(eval_jarvis ${EVAL_JARVIS_SOURCE_FILES})
