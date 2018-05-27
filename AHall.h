@@ -48,6 +48,8 @@ public:
     AHall(std::vector<Point> &dataset);
 
     std::vector<Point> aHall();
+
+    std::string print();
 };
 
 

@@ -3,6 +3,7 @@
 //
 
 #include "AHall.h"
+#include <string>
 
 AHall::AHall(std::vector<Point> &dataset) : dataset(dataset) {}
 
@@ -98,4 +99,39 @@ void AHall::getCH() {
             CH.push_back(dataset[i + 1]);
         }
     }
+}
+
+std::string AHall::print() {
+    std::string output = "";
+    output += "ld\n";
+    for (auto i = ld.begin(); i != ld.end(); i++) {
+        output += std::to_string(dataset[*i].getX()) + " " +
+                  std::to_string(dataset[*i].getY()) + "\n";
+    }
+    output += "\nrd\n";
+    for (auto i = rd.begin(); i != rd.end(); i++) {
+        output += std::to_string(dataset[*i].getX()) + " " +
+                  std::to_string(dataset[*i].getY()) + "\n";
+    }
+    output += "\nlu\n";
+    for (auto i = lu.begin(); i != lu.end(); i++) {
+        output += std::to_string(dataset[*i].getX()) + " " +
+                  std::to_string(dataset[*i].getY()) + "\n";
+    }
+    output += "\nru\n";
+    for (auto i = ru.begin(); i != ru.end(); i++) {
+        output += std::to_string(dataset[*i].getX()) + " " +
+                  std::to_string(dataset[*i].getY()) + "\n";
+    }
+    output += "\nACH\n";
+    for (auto i = ACH.begin(); i != ACH.end(); i++) {
+        output += std::to_string(dataset[*i].getX()) + " " +
+                  std::to_string(dataset[*i].getY()) + "\n";
+    }
+    output += "\nCH\n";
+    for (auto i = CH.begin(); i != CH.end(); i++) {
+        output += std::to_string((*i).getX()) + " " +
+                  std::to_string((*i).getY()) + "\n";
+    }
+    return output;
 }
