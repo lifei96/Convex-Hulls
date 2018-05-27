@@ -6,16 +6,32 @@
 #include "Timer.h"
 #include "util.h"
 #include <iostream>
+#include <fstream>
+#include <iomanip>
+
+std::string SHAPES[] = {"square", "rectangle", "circle"};
+std::string RESULT_PATH = "result/AHall.txt";
 
 int main() {
-    int num = 100000;
-    Timer timer;
-    std::vector<Point> dataset = util::readDataset(
-            "dataset/circle_" + std::to_string(num) + ".txt");
-    timer.start();
-    AHall aHall(dataset);
-    aHall.aHall();
-    timer.stop();
-    std::cout << timer.getDuration() << std::endl;
+    std::ofstream outfile;
+    outfile.open(RESULT_PATH);
+    for (std::string shape: SHAPES) {
+        for (int num = 100000; num < 10000000; num <<= 1) {
+            Timer timer;
+            std::vector<Point> dataset = util::readDataset(
+                    "dataset/" + shape + "_" + std::to_string(num) + ".txt");
+            timer.start();
+            AHall aHall(dataset);
+            aHall.aHall();
+            timer.stop();
+            std::cout << shape << " " << num << " " << timer.getDuration()
+                      << std::endl;
+            outfile << std::setiosflags(std::ios::fixed) << std::setprecision(6)
+                    << shape << " " << num << " " << timer.getDuration()
+                    << std::endl;
+
+        }
+    }
+    outfile.close();
     return 0;
 }
