@@ -14,7 +14,7 @@ std::string SHAPES[] = {"square", "rectangle", "circle"};
 int main() {
     std::ofstream outfile;
     for (std::string shape: SHAPES) {
-        for (int num = 50; num < 60; num <<= 1) {
+        for (int num = 60; num < 70; num <<= 1) {
             Timer timer;
             std::vector<Point> dataset = util::readDataset(
                     "dataset/" + shape + "_" + std::to_string(num) + ".txt");

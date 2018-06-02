@@ -11,6 +11,7 @@
 class Randomizer {
 public:
     double generate(double floor, double ceil);
+    double generateNormal(double mean, double stddev);
 };
 
 

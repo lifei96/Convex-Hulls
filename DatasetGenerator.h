@@ -15,6 +15,11 @@ public:
 
     std::vector<Point> generateCircle(double radius, int num);
 
+    std::vector<Point> generateNormalRectangle(double width,
+                                               double height,
+                                               int num,
+                                               double mean,
+                                               double stddev);
 };
 
 

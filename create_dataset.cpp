@@ -18,6 +18,14 @@ int main() {
         dataset = datasetGenerator.generateRectangle(20.0, 10.0, num);
         util::writeDataset(dataset,
                            "dataset/rectangle_" + std::to_string(num) + ".txt");
+
+        dataset = datasetGenerator.generateNormalRectangle(10.0,
+                                                           10.0,
+                                                           num,
+                                                           5.0,
+                                                           1.0);
+        util::writeDataset(dataset,
+                           "dataset/squareNormal_" + std::to_string(num) + ".txt");
     }
     return 0;
 }

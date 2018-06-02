@@ -8,7 +8,7 @@
 #include <fstream>
 #include <iomanip>
 
-std::string SHAPES[] = {"square", "rectangle", "circle"};
+std::string SHAPES[] = {"square", "rectangle", "circle", "squareNormal"};
 std::string RESULT_PATH = "result/GrahamScan.txt";
 
 int main() {

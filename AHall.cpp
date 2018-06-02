@@ -96,7 +96,7 @@ void AHall::getCH() {
         double Dy = C.getY() - A.getY();
         if (dx * Dy - dy * Dx > 0) {
             last = i + 1;
-            CH.push_back(dataset[i + 1]);
+            CH.push_back(dataset[ACH[(i + 1) % m]]);
         }
     }
 }

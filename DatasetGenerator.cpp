@@ -28,3 +28,24 @@ std::vector<Point> DatasetGenerator::generateCircle(double radius, int num) {
     }
     return dataset;
 }
+
+std::vector<Point> DatasetGenerator::generateNormalRectangle(double width,
+                                                             double height,
+                                                             int num,
+                                                             double mean,
+                                                             double stddev) {
+    std::vector<Point> dataset;
+    Randomizer randomizer = Randomizer();
+    for (int i = 0; i < num; i++) {
+        double x = randomizer.generateNormal(mean, stddev);
+        double y = randomizer.generateNormal(mean, stddev);
+        while (x < 0 || x > width) {
+            x = randomizer.generateNormal(mean, stddev);
+        }
+        while (y < 0 || y > width) {
+            y = randomizer.generateNormal(mean, stddev);
+        }
+        dataset.push_back(Point(x, y));
+    }
+    return dataset;
+}
