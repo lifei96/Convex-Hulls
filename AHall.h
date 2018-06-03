@@ -47,7 +47,7 @@ private:
 public:
     AHall(std::vector<Point> &dataset);
 
-    std::vector<Point> aHall();
+    std::vector<Point> aHall(bool parallel);
 
     std::string print();
 };

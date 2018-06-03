@@ -7,13 +7,26 @@
 
 AHall::AHall(std::vector<Point> &dataset) : dataset(dataset) {}
 
-std::vector<Point> AHall::aHall() {
+std::vector<Point> AHall::aHall(bool parallel) {
     sort(dataset.begin(), dataset.end(), AHall::xOrder());
     getPoles();
-    getld();
-    getrd();
-    getlu();
-    getru();
+    if (parallel) {
+        #pragma omp sections
+        {
+            { getld(); }
+            #pragma omp section
+            { getrd(); }
+            #pragma omp section
+            { getlu(); }
+            #pragma omp section
+            { getru(); }
+        }
+    } else {
+        getld();
+        getrd();
+        getlu();
+        getru();
+    }
     getACH();
     getCH();
     return CH;

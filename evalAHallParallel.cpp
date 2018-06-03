@@ -10,7 +10,7 @@
 #include <iomanip>
 
 std::string SHAPES[] = {"square", "rectangle", "circle", "squareNormal"};
-std::string RESULT_PATH = "result/AHall.txt";
+std::string RESULT_PATH = "result/AHallParallel.txt";
 
 int main() {
     std::ofstream outfile;
@@ -22,7 +22,7 @@ int main() {
                     "dataset/" + shape + "_" + std::to_string(num) + ".txt");
             timer.start();
             AHall aHall(dataset);
-            aHall.aHall(false);
+            aHall.aHall(true);
             timer.stop();
             std::cout << shape << " " << num << " " << timer.getDuration()
                       << std::endl;

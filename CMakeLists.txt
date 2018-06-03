@@ -20,3 +20,6 @@ add_executable(eval_monotone_chain ${EVAL_MONOTONE_CHAIN_SOURCE_FILES})
 
 set(DRAW_AHALL_SOURCE_FILES drawAHall.cpp AHall.cpp AHall.h Point.cpp Point.h Timer.cpp Timer.h util.cpp util.h)
 add_executable(draw_ahall ${DRAW_AHALL_SOURCE_FILES})
+
+set(EVAL_AHALL_PARALLEL_SOURCE_FILES evalAHallParallel.cpp AHall.cpp AHall.h Point.cpp Point.h Timer.cpp Timer.h util.cpp util.h)
+add_executable(eval_ahall_parallel ${EVAL_AHALL_PARALLEL_SOURCE_FILES})
