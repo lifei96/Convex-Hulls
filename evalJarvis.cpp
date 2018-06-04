@@ -9,7 +9,8 @@
 #include <fstream>
 #include <iomanip>
 
-std::string SHAPES[] = {"square", "rectangle", "circle", "squareNormal"};
+std::string SHAPES[] = {"square", "rectangle", "circle", "squareNormal",
+                        "squareReverseNormal"};
 std::string RESULT_PATH = "result/Jarvis.txt";
 
 int main() {

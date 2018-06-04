@@ -20,13 +20,15 @@ int main() {
 
         dataset = datasetGenerator.generateNormalSquare(10.0, num, 5.0, 1.0);
         util::writeDataset(dataset,
-                           "dataset/squareNormal_" + std::to_string(num) + ".txt");
+                           "dataset/squareNormal_" + std::to_string(num) +
+                           ".txt");
         dataset = datasetGenerator.generateReverseNormalSquare(10.0,
                                                                num,
                                                                5.0,
                                                                1.0);
         util::writeDataset(dataset,
-                           "dataset/squareReverseNormal_" + std::to_string(num) + ".txt");
+                           "dataset/squareReverseNormal_" +
+                           std::to_string(num) + ".txt");
     }
     return 0;
 }

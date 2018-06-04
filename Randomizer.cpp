@@ -20,7 +20,9 @@ double Randomizer::generateNormal(double mean, double stddev) {
     return dis(gen);
 }
 
-double Randomizer::generateReverseNormal(double mean, double stddev, double half) {
+double Randomizer::generateReverseNormal(double mean,
+                                         double stddev,
+                                         double half) {
     std::random_device rd;
     std::mt19937 gen;
     gen.seed(rd());

@@ -20,7 +20,7 @@ int main() {
                     "dataset/" + shape + "_" + std::to_string(num) + ".txt");
             timer.start();
             AHall aHall(dataset);
-            aHall.aHall();
+            aHall.aHall(false);
             timer.stop();
             outfile.open("result/DrawAHall_" + shape + ".txt");
             outfile << aHall.print();

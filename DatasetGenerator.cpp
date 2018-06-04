@@ -56,13 +56,13 @@ std::vector<Point> DatasetGenerator::generateReverseNormalSquare(double side,
     std::vector<Point> dataset;
     Randomizer randomizer = Randomizer();
     for (int i = 0; i < num; i++) {
-        double x = randomizer.generateReverseNormal(mean, stddev, side / 2.0);
-        double y = randomizer.generateReverseNormal(mean, stddev, side / 2.0);
-        while (x < 0 || x > side) {
-            x = randomizer.generateReverseNormal(mean, stddev, side / 2.0);
+        double x = randomizer.generateReverseNormal(mean, stddev, side / 4.0);
+        double y = randomizer.generateReverseNormal(mean, stddev, side / 4.0);
+        while (x < side * 0.25 || x > side * 0.75) {
+            x = randomizer.generateReverseNormal(mean, stddev, side / 4.0);
         }
-        while (y < 0 || y > side) {
-            y = randomizer.generateReverseNormal(mean, stddev, side / 2.0);
+        while (y < side * 0.25 || y > side * 0.75) {
+            y = randomizer.generateReverseNormal(mean, stddev, side / 4.0);
         }
         dataset.push_back(Point(x, y));
     }
