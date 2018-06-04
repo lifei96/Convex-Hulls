@@ -29,21 +29,40 @@ std::vector<Point> DatasetGenerator::generateCircle(double radius, int num) {
     return dataset;
 }
 
-std::vector<Point> DatasetGenerator::generateNormalRectangle(double width,
-                                                             double height,
-                                                             int num,
-                                                             double mean,
-                                                             double stddev) {
+std::vector<Point> DatasetGenerator::generateNormalSquare(double side,
+                                                          int num,
+                                                          double mean,
+                                                          double stddev) {
     std::vector<Point> dataset;
     Randomizer randomizer = Randomizer();
     for (int i = 0; i < num; i++) {
         double x = randomizer.generateNormal(mean, stddev);
         double y = randomizer.generateNormal(mean, stddev);
-        while (x < 0 || x > width) {
+        while (x < 0 || x > side) {
             x = randomizer.generateNormal(mean, stddev);
         }
-        while (y < 0 || y > width) {
+        while (y < 0 || y > side) {
             y = randomizer.generateNormal(mean, stddev);
+        }
+        dataset.push_back(Point(x, y));
+    }
+    return dataset;
+}
+
+std::vector<Point> DatasetGenerator::generateReverseNormalSquare(double side,
+                                                                 int num,
+                                                                 double mean,
+                                                                 double stddev) {
+    std::vector<Point> dataset;
+    Randomizer randomizer = Randomizer();
+    for (int i = 0; i < num; i++) {
+        double x = randomizer.generateReverseNormal(mean, stddev, side / 2.0);
+        double y = randomizer.generateReverseNormal(mean, stddev, side / 2.0);
+        while (x < 0 || x > side) {
+            x = randomizer.generateReverseNormal(mean, stddev, side / 2.0);
+        }
+        while (y < 0 || y > side) {
+            y = randomizer.generateReverseNormal(mean, stddev, side / 2.0);
         }
         dataset.push_back(Point(x, y));
     }
