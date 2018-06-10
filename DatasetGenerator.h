@@ -15,12 +15,12 @@ public:
 
     std::vector<Point> generateCircle(double radius, int num);
 
-    std::vector<Point> generateNormalSquare(double side,
+    std::vector<Point> generateNormalCircle(double radius,
                                             int num,
                                             double mean,
                                             double stddev);
 
-    std::vector<Point> generateReverseNormalSquare(double side,
+    std::vector<Point> generateReverseNormalCircle(double radius,
                                                    int num,
                                                    double mean,
                                                    double stddev);

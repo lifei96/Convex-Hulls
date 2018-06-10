@@ -18,14 +18,14 @@ int main() {
         util::writeDataset(dataset,
                            "dataset/rectangle_" + std::to_string(num) + ".txt");
 
-        dataset = datasetGenerator.generateNormalSquare(10.0, num, 5.0, 1.0);
+        dataset = datasetGenerator.generateNormalCircle(5.0, num, 0.0, 1.5);
         util::writeDataset(dataset,
                            "dataset/squareNormal_" + std::to_string(num) +
                            ".txt");
-        dataset = datasetGenerator.generateReverseNormalSquare(10.0,
+        dataset = datasetGenerator.generateReverseNormalCircle(5.0,
                                                                num,
-                                                               5.0,
-                                                               1.0);
+                                                               0.0,
+                                                               1.5);
         util::writeDataset(dataset,
                            "dataset/squareReverseNormal_" +
                            std::to_string(num) + ".txt");

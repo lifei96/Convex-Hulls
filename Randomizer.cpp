@@ -19,15 +19,3 @@ double Randomizer::generateNormal(double mean, double stddev) {
     std::normal_distribution<double> dis(mean, stddev);
     return dis(gen);
 }
-
-double Randomizer::generateReverseNormal(double mean,
-                                         double stddev,
-                                         double half) {
-    std::random_device rd;
-    std::mt19937 gen;
-    gen.seed(rd());
-    std::normal_distribution<double> dis(mean, stddev);
-    double t = dis(gen);
-    if (t > mean) return half - t + mean * 2.0;
-    return mean * 2.0 - half - t;
-}
